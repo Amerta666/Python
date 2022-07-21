@@ -5,8 +5,8 @@
 
 a = float(input('Введите число: '))
 b = str(a)
-sum = 0
+sum1 = 0
 for i in b:
-     if i != ',' and i != '.':
-          sum = sum + int(i)
-print(sum)
+    if i != ',' and i != '.':
+        sum1 = sum1 + int(i)
+print(sum1)

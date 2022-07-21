@@ -2,7 +2,7 @@
 #     Т.е. для k = 8, список будет выглядеть так: [-21 ,13, -8, 5, −3,  2, −1,  1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 #     Негафибоначчи
 
-k = 1
+k = int(input('Введите число: '))
 
 def nfib(n):
     if n in [1, 2]:
@@ -17,11 +17,11 @@ def fib(n):
         return fib(n-1) + fib(n-2)
 
 list = []
-for e in range(0, k+1):
-    list.append(nfib(-e))
+for i in range(0, k + 1):
+    list.append(nfib(-i))
 list.reverse()
 
-for e in range(1, k+1):
-    list.append(fib(e))
+for i in range(1, k + 1):
+    list.append(fib(i))
 
 print(list)  # [-21, 13, -8, 5, -3, 2, -1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
